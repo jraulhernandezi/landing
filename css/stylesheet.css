@@ -19,6 +19,13 @@ body {
     margin-top: 100px;
 }
 
+.btn:hover {
+    background-color: var(--text-color);
+    color: var(--btn-color);
+    transform: scale(1.03);
+    transition: all 0.15s;
+    font-weight: bold;
+}
 a {
     text-decoration: none;
 }
@@ -62,13 +69,16 @@ a:visited {
     border-radius: 5px;
     height: 60px;
     width: 190px;
-    border: var(--btn-color) solid 1px;
+
     padding: 0 15;
     cursor: pointer;
 }
 
-.behance::after {
-    content: "";
+.contact:hover {
+    transform: scale(1.03);
+    transition: all 0.15s;
+    border: var(--btn-color) solid 2px;
+    font-weight: bold;
 }
 
 i {
