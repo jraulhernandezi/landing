@@ -54,6 +54,16 @@ a:visited {
     cursor: pointer;
 }
 
+svg {
+    position: relative;
+    left: 50;
+    fill: var(--text-color);
+}
+
+.btn:hover svg {
+    fill: var(--btn-color);
+}
+
 .btn span {
     position: absolute;
     left: 50%;
@@ -68,10 +78,21 @@ a:visited {
     justify-content: center;
     border-radius: 5px;
     height: 60px;
-    width: 190px;
+    width: 160px;
+    border: var(--btn-color) solid 1px;
 
-    padding: 0 15;
     cursor: pointer;
+    position: relative;
+}
+.contact svg {
+    position: absolute;
+    left: 115;
+
+    fill: var(--btn-color);
+}
+.contact span {
+    position: absolute;
+    left: 15;
 }
 
 .contact:hover {
@@ -79,11 +100,6 @@ a:visited {
     transition: all 0.15s;
     border: var(--btn-color) solid 2px;
     font-weight: bold;
-}
-
-i {
-    transform: scale(0.68);
-    margin-left: 25px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -102,16 +118,14 @@ i {
         cursor: pointer;
     }
     .contact span {
-        font-size: 0;
-        display: flex;
+        display: none;
+    }
+    .contact svg {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
     }
     .contact {
-        padding: 0;
-        margin: 0;
-    }
-    .contact i {
-        position: absolute;
-        right: 50%;
-        transform: translate(50%);
+        width: 100px;
     }
 }
