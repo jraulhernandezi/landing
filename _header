@@ -1,4 +1,12 @@
-/*.woff
-    Access-Control-Allow-Origin: *
-    Content-Type: application/font-woff
-    
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+
+## A path:
+landing/css/font-awesome.min.css
+  # Headers for that path:
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+
+/templates/index2.html
+  X-Frame-Options: SAMEORIGIN
